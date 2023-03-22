@@ -128,6 +128,17 @@ img {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.loading-react {
+  position: fixed;
+  text-align: center;
+  background-color: var(--body-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 3000;
+}
 .section {
   padding: 6rem 0 2rem;
 }
