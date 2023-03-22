@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DarkMode from "../DarkMode/DarkMode";
 import "./Header.css";
 
 const Header = () => {
@@ -105,6 +106,11 @@ const Header = () => {
               >
                 <i className="uil uil-message nav__icon"></i>Contact
               </a>
+            </li>
+            <li className="nav__item ">
+              <div className="nav__link">
+                <DarkMode />
+              </div>
             </li>
           </ul>
           <i
