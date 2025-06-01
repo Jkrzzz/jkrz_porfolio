@@ -18,7 +18,7 @@ const About = () => {
             Full Stack Developer,I create web pages with UI/UX user interface, I
             have experinece and my clients are happy with projects carried out.
           </p>
-          <a download="" href={CV} className="button button--flex btn-next">
+          <a download="履歴書HH." href={CV} className="button button--flex btn-next">
             Download CV
             <svg
               class="button__icon"
@@ -46,7 +46,7 @@ const About = () => {
               ></path>
             </svg>
           </a>
-                    <a download="" href={Bg} className="button button--flex">
+          <a download="経歴書HH.pdf" href={Bg} className="button button--flex">
             Download Rirekisho
             <svg
               class="button__icon"
