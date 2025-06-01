@@ -20,7 +20,7 @@ const Social = () => {
         <i className="uil uil-github-alt"></i>
       </a>
       <a
-        href="https://www.facebook.com/hein.htet.10420"
+        href="hhttps://www.facebook.com/hein.htet.909761/"
         className="home__social-icon"
         target="_blank"
         rel="noopener noreferrer"

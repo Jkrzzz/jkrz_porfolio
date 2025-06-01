@@ -36,6 +36,9 @@
   padding: 0 4rem 0 0;
   margin-bottom: var(--mb-2);
 }
+.mr-4{
+  margin-right: 1rem;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {

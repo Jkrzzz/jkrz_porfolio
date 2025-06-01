@@ -67,8 +67,9 @@ const Data = () => {
         ></TypewriterComponent>
       </h3>
       <p className="home__description">
-        I'm full stack developer based in Yangon, and I'm very passionate and
-        deticated to my work.
+I'm a Full Stack Developer from Myanmar with 2.5 years of remote experience as a Software Engineer for a Japanese company. Currently, I'm working in operations in Okayama, Japan, while continuing to improve my tech skills and aiming to return to a development role.
+
+
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello
