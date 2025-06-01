@@ -36,8 +36,9 @@
   padding: 0 4rem 0 0;
   margin-bottom: var(--mb-2);
 }
-.mr-4{
+.btn-next{
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */

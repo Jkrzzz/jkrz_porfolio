@@ -8,9 +8,9 @@ import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Qualifications from "./components/qualification/Qualifications";
 import ScrollUp from "./components/scrollup/ScrollUp";
-import Services from "./components/services/Services";
+// import Services from "./components/services/Services";
 import Skill from "./components/skills/Skill";
-import Testimonials from "./components/testimonials/Testimonials";
+// import Testimonials from "./components/testimonials/Testimonials";
 import Work from "./components/work/Work";
 
 function App() {

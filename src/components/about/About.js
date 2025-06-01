@@ -1,7 +1,8 @@
 import React from "react";
 import "./About.css";
 import AboutImg from "../../assets/about.png";
-import CV from "../../assets/hein.pdf";
+import CV from "../../assets/cv.xlsx";
+import Bg from "../../assets/bg.xlsx";
 import Information from "./Information";
 
 const About = () => {
@@ -17,7 +18,7 @@ const About = () => {
             Full Stack Developer,I create web pages with UI/UX user interface, I
             have experinece and my clients are happy with projects carried out.
           </p>
-          <a download="" href={CV} className="button button--flex mr-4">
+          <a download="" href={CV} className="button button--flex btn-next">
             Download CV
             <svg
               class="button__icon"
@@ -45,8 +46,8 @@ const About = () => {
               ></path>
             </svg>
           </a>
-                    <a download="" href={CV} className="button button--flex">
-            Download CV
+                    <a download="" href={Bg} className="button button--flex">
+            Download Rirekisho
             <svg
               class="button__icon"
               xmlns="http://www.w3.org/2000/svg"
