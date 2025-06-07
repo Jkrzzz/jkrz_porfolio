@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import "./Qualifications.css";
+import "../../i18n";
+import { useTranslation } from "react-i18next";
+
 
 const Qualifications = () => {
+  
+const {t} = useTranslation();
   const [toggleModalServices, setToggleModalServices] = useState(1);
 
   const toggleTab = (index) => {
     setToggleModalServices(index);
   };
   return (
-    <section className="qualification section">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My Personal Journey</span>
+    <section className="qualification section" id="qualification">
+      <h2 className="section__title">{t("qual.title")}</h2>
+      <span className="section__subtitle">{t("qual.sub-title")}</span>
       <div className="qualification__container container">
         <div className="qualification__tabs">
               <div
@@ -24,7 +29,7 @@ const Qualifications = () => {
             }}
           >
             <i className="uil uil-briefcase-alt qualification__icon"></i>
-            Experience
+            {t("qual.exp")}
           </div>
           <div
             className={
@@ -37,7 +42,7 @@ const Qualifications = () => {
             }}
           >
             <i className="uil uil-graduation-cap qualification__icon"></i>
-            Education
+            {t("qual.edu")}
           </div>
       
         </div>
@@ -51,10 +56,10 @@ const Qualifications = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">BE EC</h3>
-                <span className="qualification__subtitle">TU Magway</span>
+                <h3 className="qualification__title">{t("qual.first-edu.positions")}</h3>
+                <span className="qualification__subtitle">{t("qual.first-edu.company")}</span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2014-2019
+                  <i className="uil uil-calendar-alt"></i>{t("qual.first-edu.time")}
                 </div>
               </div>
               <div>
@@ -69,23 +74,23 @@ const Qualifications = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Web Design</h3>
+                <h3 className="qualification__title">{t("qual.sec-edu.positions")}</h3>
                 <span className="qualification__subtitle">
-                  LogicUnicon - Class
+                 {t("qual.sec-exp.company")}
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2020-2021
+                  <i className="uil uil-calendar-alt"></i>{t("qual.sec-edu.time")}
                 </div>
               </div>
             </div>
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Development</h3>
+                <h3 className="qualification__title">{t("qual.thr-edu.positions")}</h3>
                 <span className="qualification__subtitle">
-                  LogicUnicon - Class
+                  {t("qual.thr-edu.company")}
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2021-2021
+                  <i className="uil uil-calendar-alt"></i> {t("qual.thr-edu.time")}
                 </div>
               </div>
 
@@ -105,12 +110,12 @@ const Qualifications = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Software Engineer</h3>
+                <h3 className="qualification__title">{t("qual.first-exp.positions")}</h3>
                 <span className="qualification__subtitle">
-                   Bliss Stock - JPN (Remote)
+                 {t("qual.first-exp.company")}
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2021 Aug - 2024 Feb
+                  <i className="uil uil-calendar-alt"></i>{t("qual.first-exp.time")}
                 </div>
               </div>
               <div>
@@ -125,12 +130,12 @@ const Qualifications = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Machine Operator</h3>
+                <h3 className="qualification__title">{t("qual.sec-exp.positions")}</h3>
                 <span className="qualification__subtitle">
-                  Okayama Towa - JPN
+                  {t("qual.sec-exp.company")}
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2024 Nov - Present
+                  <i className="uil uil-calendar-alt"></i>{t("qual.sec-exp.time")}
                 </div>
               </div>
             </div>

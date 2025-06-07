@@ -1,0 +1,65 @@
+{
+  "name" : "Hein",
+  "home": {
+    "title": "Home",
+    "name" : "Hein Htet",
+    "positions" : ["Web Developer", "Web Designer", "Software Engineer"],
+    "description" : "I'm a Full Stack Developer from Myanmar with 2.5 years of remote experience as a Software Engineer for a Japanese company. Currently, I'm working in operations in Okayama, Japan and aiming to return to a development role.",
+    "hello" : "Say Hello",
+    "down" : "Scroll Down"
+  },
+  "about": {
+    "title":"About",
+    "main-title" :"About Me",
+    "intro" : "My Introduction",
+    "exp" : "Experience",
+    "years" : "2.5 Years Working",
+    "completed" : "Completed",
+    "project" : "10 + Projects",
+    "support"  : "Support",
+    "time" : "Online 24/7",
+    "des" : "Full Stack Developer,I create web pages with UI/UX user interface, I have experinece and my clients are happy with projects carried out.",
+    "down-cv": "Download CV",
+    "down-his" : "Download Job History"
+  } ,
+  "skill" :{ "title": "Skills","sub-title":"My Technical Level","front":"Frontend Development","back":"Backend Development"},
+  "qual" :{
+    "title":"Qualification", 
+    "sub-title":"My Personal Journey",
+    "exp" : "Experience",
+    "edu":"Education",
+    "first-exp":{"positions":"Software Engineer","company":"Bliss Stock - JPN","remote":"Remote","time":"2021 Aug - 2024 Feb"},
+    "sec-exp":{"positions":"Machine Operator","company":"Okayama Towa - JPN","time":"2024 Nov - Present"},
+    "first-edu":{"positions":"BE EC","company":"TU Magway","time":"2014 - 2019 "},
+    "sec-edu":{"positions":"Web Design","company":"LogicUnicon - Class","time":"2020 - 2021 "},
+    "thr-edu":{"positions":"Web Development","company":"LogicUnicon - Class","time":"2021 - 2021 "}
+  },
+  "project" :{
+        "title" :"Projects",
+        "sub-title" :"Most recent works"
+    },
+      "contact" :{
+        "title" :"Contact",
+        "main-title":"Get in touch",
+        "sub-title" :"Contact me",
+        "left":{
+            "title":"Talk to me",
+            "mail": "Email",
+            "write": "Write me",
+            "phone": "Phone",
+            "mes" :"Messenger"
+        },
+        "right":{
+            "title":"Write me your project",
+            "name":"Name",
+            "name-des":"Enter Name",
+            "email":"Email",
+            "email-des":"Enter Email",
+            "project":"Project",
+            "project-des":"Enter About Project",
+            "send":"Send Message"
+
+        } 
+
+    }
+}

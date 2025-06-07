@@ -1,18 +1,22 @@
 import React from "react";
 import "./Contact.css";
+import "../../i18n";
+import { useTranslation } from "react-i18next";
+
 
 const Contact = () => {
+  const {t} = useTranslation();
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact me</span>
+      <h2 className="section__title">{t("contact.main-title")}</h2>
+      <span className="section__subtitle">{t("contact.sub-title")}</span>
       <div className="contact__container container grid">
         <div className="contact__content">
-          <h3 className="contact__title">Talk to me</h3>
+          <h3 className="contact__title">{t("contact.left.title")}</h3>
           <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon">
-                <h3 className="contact__card-title">Email</h3>
+                <h3 className="contact__card-title">{t("contact.left.mail")}</h3>
                 <span className="contact__card-data">
                   heinhtetjkrz@gmail.com
                 </span>
@@ -20,7 +24,7 @@ const Contact = () => {
                   href="mailto:heinhtetjkrz@gmail.com"
                   className="contact__button"
                 >
-                  Write me
+                  {t("contact.left.write")}
                   <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </i>
@@ -30,7 +34,7 @@ const Contact = () => {
                 <h3 className="contact__card-title">Phone</h3>
                 <span className="contact__card-data">080-5567-2370</span>
                 <a href="tel:+8180-5567-2370" className="contact__button">
-                  Write me
+                  {t("contact.left.write")}
                   <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </i>
@@ -43,7 +47,7 @@ const Contact = () => {
                   href="https://m.me/hein.htet.909761"
                   className="contact__button"
                 >
-                  Write me
+                  {t("contact.left.write")}
                   <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </i>
@@ -51,39 +55,42 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact__content">
-          <h3 className="contact__title">Write me your project</h3>
+          <h3 className="contact__title">{t("contact.right.title")}</h3>
 
           <form action="" className="contact__form">
             <div className="contact__form-div">
-              <label className="contact__form-tag">Name</label>
+              <label className="contact__form-tag">{t("contact.right.name")}</label>
               <input
                 type="text"
                 name="name"
                 className="contact__form-input"
-                placeholder="Enter your name"
+                placeholder={t("contact.right.name-des")}
               />
             </div>
             <div className="contact__form-div">
-              <label className="contact__form-tag">Email</label>
+              <label className="contact__form-tag">{t("contact.right.email")}</label>
               <input
                 type="email"
                 name="email"
                 className="contact__form-input"
-                placeholder="Enter your email"
+                placeholder={t("contact.right.email-des")}
+
               />
             </div>
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">Project</label>
+              <label className="contact__form-tag">{t("contact.right.project")}</label>
               <textarea
                 name="project"
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Enter your Project"
+                placeholder={t("contact.right.project-des")}
+
               ></textarea>
             </div>
             <button className="button button--flex">
-              Send Message
+              {t("contact.right.send")}
+
               <svg
                 className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"

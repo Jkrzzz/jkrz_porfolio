@@ -4,24 +4,27 @@ import AboutImg from "../../assets/about.png";
 import CV from "../../assets/cv.xlsx";
 import Bg from "../../assets/bg.xlsx";
 import Information from "./Information";
+import "../../i18n";
+import { useTranslation } from "react-i18next";
+
 
 const About = () => {
+const {t} = useTranslation();
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My Introduction</span>
+      <h2 className="section__title">{t('about.main-title')}</h2>
+      <span className="section__subtitle">{t('about.intro')}</span>
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />
         <div className="about__data">
           <Information />
           <p className="about__description">
-            Full Stack Developer,I create web pages with UI/UX user interface, I
-            have experinece and my clients are happy with projects carried out.
+            {t('about.des')}
           </p>
           <a download="履歴書HH." href={CV} className="button button--flex btn-next">
-            Download CV
+            {t('about.down-cv')}
             <svg
-              class="button__icon"
+              className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -47,9 +50,9 @@ const About = () => {
             </svg>
           </a>
           <a download="経歴書HH.pdf" href={Bg} className="button button--flex">
-            Download Rirekisho
+            {t('about.down-his')}
             <svg
-              class="button__icon"
+              className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"

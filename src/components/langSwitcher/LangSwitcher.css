@@ -1,0 +1,16 @@
+.language-switcher  img{
+margin-right: .4rem;
+}
+
+.flag-icon {
+  width: 32px;
+  height: 24px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.flag-icon:hover {
+  transform: scale(1.1);
+}

@@ -1,11 +1,14 @@
 import React from "react";
 import TypewriterComponent from "typewriter-effect";
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 
 const Data = () => {
+  const {t} = useTranslation();
   return (
     <div className="home__data">
       <h1 className="home__title">
-        Hein Htet
+        {t('home.name')}
         <svg
           width="36"
           height="36"
@@ -62,17 +65,16 @@ const Data = () => {
             autoStart: true,
             loop: true,
             delay: 40,
-            strings: ["Web Developer", "Web Designer", "Software Engineer"],
+            strings: t('home.positions',{returnObjects:true}),
           }}
         ></TypewriterComponent>
       </h3>
       <p className="home__description">
-I'm a Full Stack Developer from Myanmar with 2.5 years of remote experience as a Software Engineer for a Japanese company. Currently, I'm working in operations in Okayama, Japan, while continuing to improve my tech skills and aiming to return to a development role.
-
+        {t('home.description')}
 
       </p>
       <a href="#contact" className="button button--flex">
-        Say Hello
+        {t('home.hello')}
         <svg
           className="button__icon"
           xmlns="http://www.w3.org/2000/svg"

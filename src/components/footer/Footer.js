@@ -1,27 +1,30 @@
 import React from "react";
 import "./Footer.css";
+import "../../i18n"
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+   const {t} = useTranslation();
   return (
     <footer className="footer">
       <div className="footer__container container">
-        <h1 className="footer__title">Hein</h1>
+        <h1 className="footer__title">{t('name')}</h1>
         <ul className="footer__list">
           <li>
             <a href="#about" className="footer__link">
-              About
+              {t('about.title')}
             </a>
           </li>
           <li>
             <a href="#porfolio" className="footer__link">
-              Projects
+              {t('project.title')}
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#testimonials" className="footer__link">
               Testimonials
             </a>
-          </li>
+          </li> */}
         </ul>
         <div className="footer__social">
           <a

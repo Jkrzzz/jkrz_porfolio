@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import DarkMode from "../DarkMode/DarkMode";
 import "./Header.css";
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
+import LanguageSwitcher from "../langSwitcher/LangSwitcher";
 
 const Header = () => {
   window.addEventListener("scroll", function () {
@@ -13,11 +16,12 @@ const Header = () => {
   const toggleMenuHandler = () => {
     setToggleMenu(!toggleMenu);
   };
+   const { t } = useTranslation();
   return (
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          Hein
+          {t('name')}
         </a>
         <div className={toggleMenu ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
@@ -31,7 +35,7 @@ const Header = () => {
                   activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-estate nav__icon"></i>Home
+                <i className="uil uil-estate nav__icon"></i>{t('home.title')}
               </a>
             </li>
             <li className="nav__item ">
@@ -44,7 +48,7 @@ const Header = () => {
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-user nav__icon"></i>About
+                <i className="uil uil-user nav__icon"></i>{t('about.title')}
               </a>
             </li>
             <li className="nav__item ">
@@ -59,7 +63,22 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-file-alt nav__icon"></i>Skills
+                <i className="uil uil-file-alt nav__icon"></i>{t("skill.title")}
+              </a>
+            </li>
+                        <li className="nav__item ">
+              <a
+                href="#qualification"
+                onClick={() => {
+                  setActiveNav("#qualification");
+                }}
+                className={
+                  activeNav === "#qualification"
+                    ? "nav__link active-link"
+                    : "nav__link"
+                }
+              >
+                <i className="uil uil-scenery nav__icon"></i>{t("qual.title")}
               </a>
             </li>
             {/* <li className="nav__item ">
@@ -89,9 +108,10 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-scenery nav__icon"></i>Profolio
+                <i className="uil uil-scenery nav__icon"></i>{t("project.title")}
               </a>
             </li>
+            
             <li className="nav__item ">
               <a
                 href="#contact"
@@ -104,13 +124,18 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-message nav__icon"></i>Contact
+                <i className="uil uil-message nav__icon"></i>{t("contact.title")}
               </a>
             </li>
             <li className="nav__item ">
               <div className="nav__link">
                 <DarkMode />
               </div>
+            </li>
+            <li className="nav__item">
+                <div className="nav__link">
+                  <LanguageSwitcher/>
+                </div>
             </li>
           </ul>
           <i
