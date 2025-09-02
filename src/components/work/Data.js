@@ -6,30 +6,30 @@ export const projectsData = [
   {
     id: 1,
     image: Work1,
-    title: "Awaken Entertainment",
+    title: "React E Commerce",
     category: "web dev",
-    link:"https://awakenentertainment.org/"
+    link: "https://jkrz-react-ecommerce.vercel.app/",
   },
   {
     id: 2,
     image: Work2,
     title: "APlus Wallet",
     category: "migration",
-    link:"https://www.apluswallet.com.mm/en"
+    link: "https://www.apluswallet.com.mm",
   },
   {
     id: 3,
     image: Work3,
     title: "Little Codelab",
     category: "migration",
-    link:"https://littlecodelab.com/"
+    link: "https://littlecodelab.com/",
   },
   {
     id: 4,
     image: Work4,
     title: "Hnj Success",
     category: "web dev",
-    link:"https://hnjsuccess.com/"
+    link: "https://hnjsuccess.com/",
   },
 ];
 export const projectsNav = [
