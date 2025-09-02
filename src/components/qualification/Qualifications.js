@@ -3,10 +3,8 @@ import "./Qualifications.css";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
 
-
 const Qualifications = () => {
-  
-const {t} = useTranslation();
+  const { t } = useTranslation();
   const [toggleModalServices, setToggleModalServices] = useState(1);
 
   const toggleTab = (index) => {
@@ -18,7 +16,7 @@ const {t} = useTranslation();
       <span className="section__subtitle">{t("qual.sub-title")}</span>
       <div className="qualification__container container">
         <div className="qualification__tabs">
-              <div
+          <div
             className={
               toggleModalServices === 1
                 ? "qualification__button qualification__active button--flex"
@@ -44,7 +42,6 @@ const {t} = useTranslation();
             <i className="uil uil-graduation-cap qualification__icon"></i>
             {t("qual.edu")}
           </div>
-      
         </div>
         <div className="qualification__sections">
           <div
@@ -56,10 +53,15 @@ const {t} = useTranslation();
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">{t("qual.first-edu.positions")}</h3>
-                <span className="qualification__subtitle">{t("qual.first-edu.company")}</span>
+                <h3 className="qualification__title">
+                  {t("qual.first-edu.positions")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qual.first-edu.company")}
+                </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>{t("qual.first-edu.time")}
+                  <i className="uil uil-calendar-alt"></i>
+                  {t("qual.first-edu.time")}
                 </div>
               </div>
               <div>
@@ -74,23 +76,29 @@ const {t} = useTranslation();
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">{t("qual.sec-edu.positions")}</h3>
+                <h3 className="qualification__title">
+                  {t("qual.sec-edu.positions")}
+                </h3>
                 <span className="qualification__subtitle">
-                 {t("qual.sec-exp.company")}
+                  {t("qual.sec-edu.company")}
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>{t("qual.sec-edu.time")}
+                  <i className="uil uil-calendar-alt"></i>
+                  {t("qual.sec-edu.time")}
                 </div>
               </div>
             </div>
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">{t("qual.thr-edu.positions")}</h3>
+                <h3 className="qualification__title">
+                  {t("qual.thr-edu.positions")}
+                </h3>
                 <span className="qualification__subtitle">
                   {t("qual.thr-edu.company")}
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> {t("qual.thr-edu.time")}
+                  <i className="uil uil-calendar-alt"></i>{" "}
+                  {t("qual.thr-edu.time")}
                 </div>
               </div>
 
@@ -110,12 +118,15 @@ const {t} = useTranslation();
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">{t("qual.first-exp.positions")}</h3>
+                <h3 className="qualification__title">
+                  {t("qual.first-exp.positions")}
+                </h3>
                 <span className="qualification__subtitle">
-                 {t("qual.first-exp.company")}
+                  {t("qual.first-exp.company")}
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>{t("qual.first-exp.time")}
+                  <i className="uil uil-calendar-alt"></i>
+                  {t("qual.first-exp.time")}
                 </div>
               </div>
               <div>
@@ -130,12 +141,15 @@ const {t} = useTranslation();
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">{t("qual.sec-exp.positions")}</h3>
+                <h3 className="qualification__title">
+                  {t("qual.sec-exp.positions")}
+                </h3>
                 <span className="qualification__subtitle">
                   {t("qual.sec-exp.company")}
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>{t("qual.sec-exp.time")}
+                  <i className="uil uil-calendar-alt"></i>
+                  {t("qual.sec-exp.time")}
                 </div>
               </div>
             </div>
